@@ -11,7 +11,7 @@ Run `cfn-lint` in a container.
 docker run --rm -it -v $PWD:/workdir craighurley/cfn-lint
 ```
 
-Optional: create an alias for the container:
+Optional: create an alias for the container, including common `cfn-lint` arguments:
 
 ```sh
 alias cfn-lint='docker run --rm -it -v $PWD:/workdir craighurley/cfn-lint -i E3012,W2001,W3011 --'
